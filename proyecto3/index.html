@@ -18,19 +18,23 @@
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
+  <!-- Main container for page layout and styling -->
+
   <div class="container">
     <h1>Product Management</h1>
 
-    <form id="product-form">
+    <form id="product-form"><!-- Linked to JS for handling add/edit -->
+
       <input type="text" id="name" placeholder="Product name" required>
       <input type="number" id="price" placeholder="Price" min="0" required>
       <input type="number" id="quantity" placeholder="quantity" min="0" required>
       <button type="submit">Add product</button>
     </form>
 
-    <div id="results"></div>
+    <div id="results"></div><!-- JS injects product list here -->
+
   </div>
 
-  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/main.js"></script><!-- Entry point for app logic -->
 </body>
 </html>
