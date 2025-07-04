@@ -1,34 +1,3 @@
 {
-  "products": [
-    {
-      "id": "3043",
-      "name": "pepe",
-      "price": 200,
-      "quantity": 500
-    },
-    {
-      "id": "27cf",
-      "name": "mango",
-      "price": 1500,
-      "quantity": 10
-    },
-    {
-      "id": "f36d",
-      "name": "pera",
-      "price": 1000,
-      "quantity": 20
-    },
-    {
-      "name": "xbox series s",
-      "price": 100500,
-      "quantity": 5,
-      "id": "a6c5"
-    },
-    {
-      "id": "f272",
-      "name": "UVA",
-      "price": 1000,
-      "quantity": 20
-    }
-  ]
+  "products": []
 }
