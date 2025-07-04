@@ -1,3 +1,10 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "8151",
+      "name": "mango",
+      "price": 600,
+      "quantity": 15
+    }
+  ]
 }
