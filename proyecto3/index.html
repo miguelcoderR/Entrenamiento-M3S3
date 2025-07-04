@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="It is a lightweight web application for registering, editing and deleting products in real time, without allowing duplicates.">
+  <meta name="keywords" content="products,web,crud">
+  <meta name="sitedomain" content="https://miguelcoderr.github.io/CRUD/ ">
+  <meta name="organization" content="https://github.com/miguelcoderR">
+  <meta name="author" content="MIGUEL ANGEL ORTEGA CANTILLO">
+  <meta name="designer" content="MIGUEL ANGEL ORTEGA CANTILLO">
+  <meta name="copyright" content="© 2025 miguelcoderR. All rights reserved">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="revisit-after" content="15days">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product Management</h1>
+
+    <form id="product-form">
+      <input type="text" id="name" placeholder="Product name" required>
+      <input type="number" id="price" placeholder="Price" min="0" required>
+      <input type="number" id="quantity" placeholder="quantity" min="0" required>
+      <button type="submit">Add product</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

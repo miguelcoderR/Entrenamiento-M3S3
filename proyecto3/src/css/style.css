@@ -1,0 +1,116 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f77c09;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #07af61;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1a73e8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #02fd16;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #155ab6;
+}
+
+#results {
+  margin-top: 25px;
+}
+
+/* MOBILE (up to 599px) */
+@media (max-width: 599px) {
+  .container {
+    padding: 20px;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+/* TABLET (600px to 1023px) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  input:nth-child(1),
+  input:nth-child(2),
+  input:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  button {
+    grid-column: 1 / -1;
+    padding: 12px;
+  }
+}
+
+/* DESKTOP (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 700px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 15px;
+    align-items: end;
+  }
+
+  input,
+  button {
+    margin: 0;
+  }
+
+  input {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
